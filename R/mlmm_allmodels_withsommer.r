@@ -390,7 +390,7 @@ ind.covariances<-function(K,fact){
     RES
 }
 ##################################################################
-##~~THIS FUNCTION NOW JUST SETS THE NAMES OF THE NORMALIZED KINSHIP MATRIX~~##
+##~~THIS FUNCTION IS NOW NONSENSE. IT JUST CREATES AN NEW OBJECT~~##
 proj.matrix.sdp<-function(matrix){
     #projection of the matrix on definite positive matrix cone.
     # cst<-0.000001
@@ -399,6 +399,7 @@ proj.matrix.sdp<-function(matrix){
     # valpp.mat[which(valpp.mat<cst)]<-cst  # transform too small or negative value
     # valpp.proj<-valpp.mat
     # res<-mat.decomp$vectors %*% (diag(valpp.proj)) %*% t(mat.decomp$vectors)
+    res <- matrix
     colnames(res)<-colnames(matrix)
     rownames(res)<-rownames(matrix)
     res
